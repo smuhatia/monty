@@ -58,10 +58,10 @@ void process_file(const char *filename)
 	stack_t *working_stack = NULL;
 
 	instruction_t op_codes_funcs[] = {
-		{"push", handle_push}, {"pall", handle_pall},
-		{"print", handle_print}, {"pop", handle_pop},
-		{"swap", handle_swap}, {"add", handle_add},
-		{"nop", handle_nop}, {"sub", sub},
+		{"push", op_push}, {"pall", op_pall},
+		{"print", op_pint}, {"pop", op_pop},
+		{"swap", op_swap}, {"add", op_add},
+		{"nop", op_nop}, {"sub", sub},
 		{NULL, NULL}
 	};
 	if (file == NULL)
